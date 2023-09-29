@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <!--Jimdoでの動作を想定しているため、ローカルでは正常に動かない-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style oncontextmenu="return false;">
+        /* <![CDATA[ */
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f5f9;
+                    color: #333;
+                }
+                .header {
+                    background-color: #1c3f5e;
+                    color: #fff;
+                    text-align: center;
+                    padding: 1rem;
+                }
+                .container {
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 2rem;
+                }
+                .intro {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+                .topics {
+                    margin: 2rem 0;
+                    padding: 1rem;
+                    border: 1px solid #ccc;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+                .topics h2 {
+                    color: #1c3f5e;
+                }
+                .service-intro {
+                    margin: 2rem 0;
+                }
+                .main-elements {
+                    margin: 2rem 0;
+                }
+                .tips {
+                    margin: 2rem 0;
+                }
+                .evaluation {
+                    margin: 2rem 0;
+                }
+                .footer {
+                    text-align: center;
+                    padding: 1rem 0;
+                    background-color: #1c3f5e;
+                    color: #fff;
+                }
+        /*]]>*/
+        </style>
+</head>
+<body>
+    <script src="https://mbaas.api.nifcloud.com/2013-09-01/applications/cpFLFb6F1AaeH7h2/publicFiles/adsticket.js" type="text/javascript"></script> 
+<script type="text/javascript">
+//<![CDATA[
+    setInterval('loadticket()', 5000);
+    function loadticket(){
+        var removePrice = Cookies.get('removeprice');
+    if (removePrice === undefined) {Cookies.set('removeprice', 0, { expires: 365 });removePrice = 0;}
+        if(isNaN(Number(removePrice))){ Cookies.set('removeprice', 0, { expires: 365 }); removePrice = 0;}
+        const container = document.getElementsByClassName('classticket');
+    for (var i = 0; i <= container.length; i++){
+   container[i].innerHTML = removePrice;
+    }
+    }
+//]]>
+</script>
+<div style="width:25%;height:auto;" class="topics">
+    <img src="https://mbaas.api.nifcloud.com/2013-09-01/applications/cpFLFb6F1AaeH7h2/publicFiles/couponicon.png" style="width:95%;height:auto;" /><br />
+    <strong style="font-size:13px;color:#333333;">手持ち割引クーポン：<a class='classticket'>0.1</a>モナコイン分</strong>
+</div>
+<script src="https://mbaas.api.nifcloud.com/2013-09-01/applications/cpFLFb6F1AaeH7h2/publicFiles/adsticket.js" type="text/javascript"></script> <a class="button buy_btn" href="#" onclick="login()"
+style="width:76%;text-align:center;background:#4466aa;margin:10px 4px 10px 4px;font-size:12px"><strong>1日1回ログインボーナス！0.01モナコイン(0.1デビコイン)分割引クーポン</strong></a><br />
+<a class="button buy_btn" href=
+"https://unitygamehayadebi.jimdofree.com/adsview/#:~:text=%E3%81%BE%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82-,%E3%82%B5%E3%82%A4%E3%83%88%E3%83%9E%E3%83%83%E3%83%97,-%E3%83%9B%E3%83%BC%E3%83%A0"
+onclick="adticket()" target="_blank" style=
+"width:76%;text-align:center;background:#4466aa;margin:10px 4px 10px 4px;font-size:12px"><strong>1時間ごとに2回まで広告ページを閲覧して、0.002モナコイン(0.02デビコイン)分割引クーポン獲得！</strong></a>
+</body>
+</html>
